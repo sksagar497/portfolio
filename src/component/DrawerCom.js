@@ -1,7 +1,7 @@
 import { Drawer, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material'
 import React,{useState} from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
-const PAGES = ['PROFILE','PROJECTS','SKILLS','EDUCATION','HOBBIES']
+const PAGES = ['HOME','PROJECTS','SKILLS','EDUCATION','HOBBIES']
 const DrawerCom = () => {
     const [openDrawer,setOpenDrawer] = useState(false);
   return (
