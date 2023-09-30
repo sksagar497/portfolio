@@ -23,7 +23,8 @@ export const Main = () => {
           <Route path="/hobbies" component={Hobby} />
         </Routes>
       </Router> */}
-      <Home />
+      {/* <Home /> */}
+      <Education/>
     </div>
   );
 };
