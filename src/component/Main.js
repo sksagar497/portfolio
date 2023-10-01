@@ -24,7 +24,7 @@ export const Main = () => {
         </Routes>
       </Router> */}
       {/* <Home /> */}
-      <Education/>
+      <Skill/>
     </div>
   );
 };
