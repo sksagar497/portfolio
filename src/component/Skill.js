@@ -4,9 +4,8 @@ import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
 
 function BasicRating() {
-  const [value, setValue] = React.useState(2);
+ 
   const containerStyle = {
-      // Optional: Border radius for rounded corners
     padding: '20px',  // Padding to create space inside the container
     display: 'flex',
     flexDirection: 'row',  // Arrange in a row layout
