@@ -12,19 +12,18 @@ export const Main = () => {
   return (
     <div container>
       
-      {/* <Router>
+      <Router>
       <Header />
 
         <Routes>
-          <Route path="/home" component={Home} />
-          <Route path="/skills" component={Skill} />
-          <Route path="/projects" component={Project} />
-          <Route path="/educations" component={Education} />
-          <Route path="/hobbies" component={Hobby} />
+          <Route path="/" element={<Home />} />
+          <Route path="/skills" element={<Skill />} />
+          <Route path="/projects" element={<Project />} />
+          <Route path="/hobbies" element={<Hobby />} />
+          <Route path="/educations" element={<Education />} />
         </Routes>
-      </Router> */}
-      {/* <Home /> */}
-      <Hobby/>
+      </Router>
+     
     </div>
   );
 };

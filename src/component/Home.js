@@ -63,7 +63,6 @@ const Home = () => {
       </Grid>
     </Grid>
     
-    
   )
 }
 
