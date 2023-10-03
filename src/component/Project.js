@@ -56,14 +56,14 @@ const Project = () => {
 
   return (
     <>
-  <h3 style={{color:'white', textAlign:'center', backgroundColor:'#008080', padding: '5px'}}>Welcome to My Project Page :-</h3>
-    <div style={{ display: "flex"  , justifyContent: "center", flexWrap: "wrap", gap: "16px" }}>
+  <h3 style={{color:'white', textAlign:'center', backgroundColor:'#008080', padding: '15px'}}>Welcome to My Project Page :-</h3>
+    <div width='75%' style={{ display: "flex"  , justifyContent: "center", flexWrap: "wrap", gap: "40px" }}>
       {hobbies.map((hobi, index) => (
-        <Card key={index} sx={{ width: 470, marginBottom: "16px", background: '#FFF5EE' }}>
+        <Card key={index} sx={{ width: '35%', marginBottom: "16px", background: '#FFF5EE' }}>
           <CardMedia
             component="img"
             alt={hobi.genre}
-            height="250"
+            height="200"
             image={hobi.link}
           />
           <CardContent>

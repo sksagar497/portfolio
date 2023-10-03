@@ -21,11 +21,9 @@ const Header = () => {
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
 
-
-
   return (
     <React.Fragment>
-      <AppBar sx={{ background: "#063970" }}>
+      <AppBar  sx={{ background: "#063970" , position: 'fixed', top: '0%'}}>
         <Toolbar>
           {isMatch ? (
             <>
@@ -33,12 +31,14 @@ const Header = () => {
               <DrawerCom />
             </>
           ) : (
+            
             <Tabs 
             value={value}
               textColor="white"
               onChange={(e, value) => setValue(value)}
               indicatorColor="secondary"
-            >            
+            > 
+                          
                 <Tab label='HOME' component={Link} to='/' />
                 <Tab label='PROJECTS' component={Link} to='/projects' />
                 <Tab label='SKILLS' component={Link} to='/skills' />

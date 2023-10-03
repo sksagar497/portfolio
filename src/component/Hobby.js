@@ -34,7 +34,7 @@ const Hobby = () => {
 
   return (
     <>
-  <h3 style={{color:'white', textAlign:'center', backgroundColor:'#008080', padding: '5px'}}>Welcome to My Skills Page :-</h3>
+  <h3 style={{color:'white', textAlign:'center', backgroundColor:'#008080', padding: '15px'}}>Welcome to My Skills Page :-</h3>
     <div style={{ display: "flex"  , justifyContent: "center", flexWrap: "wrap", gap: "16px" }}>
       {hobbies.map((hobi, index) => (
         <Card key={index} sx={{ width: 500, marginBottom: "16px" }}>

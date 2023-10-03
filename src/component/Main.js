@@ -7,14 +7,19 @@ import Skill from "./Skill";
 import Project from "./Project";
 import Education from "./Education";
 import Hobby from "./Hobby";
+import Footer from "./Footer";
 
 export const Main = () => {
   return (
     <div container>
       
       <Router>
-      <Header />
-
+        <div>
+        <Header />
+        </div>
+          <br />
+          <br />
+        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/skills" element={<Skill />} />
@@ -23,7 +28,7 @@ export const Main = () => {
           <Route path="/educations" element={<Education />} />
         </Routes>
       </Router>
-     
+      <Footer />
     </div>
   );
 };
