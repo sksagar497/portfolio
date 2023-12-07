@@ -4,7 +4,7 @@ import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineDot from "@mui/lab/TimelineDot";
+
 import { Star as StarIcon } from "@mui/icons-material";
 import { Grid, Typography } from "@mui/material";
 import { green } from "@mui/material/colors";
@@ -44,12 +44,12 @@ const TimeData = () => {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Typography variant="body2" >
+          <Typography color={"white"} variant="body2" >
             Year : {item.year}
           </Typography>
-          <Typography variant='caption'> {item.event}</Typography>
-          <Typography variant='body1'>Institute: {item.inst} ,{item.loc}</Typography>
-          <Typography variant='overline'>Grade: {item.grade}</Typography>
+          <Typography color={"white"} variant='caption'> {item.event}</Typography>
+          <Typography color={"white"} variant='body1'>Institute: {item.inst} ,{item.loc}</Typography>
+          <Typography color={"white"}  variant='overline'>Grade: {item.grade}</Typography>
         </TimelineContent>
       </TimelineItem>
     ))}
@@ -66,13 +66,13 @@ function Pic(){
 
 const Education = () => {
   return (
-    <>
-    <h3 style={{color:'white', textAlign:'center', backgroundColor:'#BDB76B', padding: '5px'}}>Welcome to my Education Page : -</h3>
+    <div >
+    <h3 style={{color:'white', textAlign:'center', backgroundColor:'#BDB76B', padding: '15px'}}>Welcome to my Education Page : -</h3>
       <Grid container spaacing = '2'>
         <Grid item alignItems={'left'} xs={12} md={7}><TimeData /> </Grid>
         <Grid item xs={12} md={5}> <Pic/></Grid>
       </Grid>
-    </>
+    </div>
   );
 };
 

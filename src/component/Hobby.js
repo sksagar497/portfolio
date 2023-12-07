@@ -33,29 +33,29 @@ const Hobby = () => {
   ];
 
   return (
-    <>
-  <h3 style={{color:'white', textAlign:'center', backgroundColor:'#008080', padding: '15px'}}>Welcome to My Skills Page :-</h3>
-    <div style={{ display: "flex"  , justifyContent: "center", flexWrap: "wrap", gap: "16px" }}>
+    <div >
+  <h3 style={{color:'white',textAlign:'center', backgroundColor:'#008080', padding: '15px'}}>Welcome to My Skills Page :-</h3>
+    <div  style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "16px" }}>
       {hobbies.map((hobi, index) => (
-        <Card key={index} sx={{ width: 500, marginBottom: "16px" }}>
+        <Card key={index} sx={{ width: 500, marginBottom: "16px",backgroundColor:'transparent',color:'white' }}>
           <CardMedia
             component="img"
             alt={hobi.genre}
             height="300"
             image={hobi.link}
           />
-          <CardContent>
+          <CardContent >
             <Typography gutterBottom variant="h5" component="div">
               {hobi.genre}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" color="white">
               {hobi.description}
             </Typography>
           </CardContent>
         </Card>
       ))}
     </div>
-    </>
+    </div>
   );
 };
 
