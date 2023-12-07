@@ -34,7 +34,7 @@ const Project = () => {
     },
     {
       genre: "Weather App",
-      url: "",
+      url: "https://sksagar497.github.io/weather/",
       link: weather,
       description: "skills required",
       skill: [
