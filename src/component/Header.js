@@ -91,7 +91,7 @@ const Header = () => {
               <Tab icon={<RocketLaunchIcon />} label="SKILLS" component={Link} to="/skills" />
               <Tab icon={<HistoryEduIcon />} label="EDUCATION" component={Link} to="/educations" />
               <Tab icon={<SportsCricketIcon />} label="HOBBIES" component={Link} to="/hobbies" />
-              <Tab icon={<ModeStandbyIcon />} sx={{ marginLeft: 'auto' }} onClick={handleOpen} label="Open Modal" />
+              <Tab icon={<ModeStandbyIcon />} sx={{ marginLeft: 'auto' }} onClick={handleOpen} label="SUGGESTIONS" />
               <Modal
                 
                 open={open}
